@@ -565,7 +565,7 @@ generateStars();
 //renderer
 const canvas = document.querySelector('.webgl');
 const renderer = new THREE.WebGLRenderer({ canvas});
-renderer.outputEncoding = THREE.sRGBEncoding;
+renderer.outputEncoding = THREE.LinearSRGBColorSpace;
 renderer.setSize(sizes.width, sizes.height);
 renderer.render(scene, camera);
 
